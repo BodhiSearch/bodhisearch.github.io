@@ -1,0 +1,113 @@
+Please modify the current landing page while maintaining its clean aesthetic. Here are the specific changes needed:
+
+1. Header (Keep & Refine)
+- Keep current clean header with Bodhi logo
+- remove Features, Docs, Blog as we do not have the content yet
+- Retain GitHub, Discord, and Download buttons with violet accent
+- Keep the minimal, uncluttered design
+
+2. Hero Section Revisions
+- Keep the excellent "Run LLMs locally, powered by Open Source" headline
+- Maintain the violet gradient on "Open Source"
+- make it less enterprisy and jargony - `Experience the power of local AI with seamless integration, enhanced privacy, and enterprise-grade features.`
+- There is no enterprise feature so do not mention enterprise in the landing page.
+- The logos are available in src/public. Use the logo of a appropriate size where required.
+- Replace the Python code block with either:
+  b) An animated demonstration of the app in action, use the image public/chat-ui.jpeg for same
+
+3. Feature Showcase Sections (New)
+Add alternating split-screen sections below hero:
+
+a) Chat Interface Section
+LEFT: Screenshot showing:
+- Actual Bodhi chat interface
+- Real conversation example
+- Markdown rendering
+- Code highlighting
+RIGHT: Feature highlights:
+- "Professional-Grade Chat Experience"
+- Markdown & code support
+- Multiple conversation management
+- Model switching capability
+
+b) Model Management Section
+LEFT: Feature description:
+- "Seamless Model Integration"
+- HuggingFace ecosystem
+- One-click downloads
+RIGHT: Screenshot showing:
+- Model download interface
+- Model configuration panel
+- Performance settings
+
+c) API & Development Section
+LEFT: Screenshot showing:
+- API documentation
+- Code examples
+- Authentication setup
+RIGHT: Feature highlights:
+- OpenAI compatibility
+- Ollama API support
+- Enterprise security options
+
+4. Core Features Grid (Enhance Current)
+- Keep the existing 6-card grid layout
+- Maintain current icons but add subtle hover animations
+- Preserve current feature set:
+  • Built-in Chat UI
+  • Model Management
+  • API Compatibility
+  • Security First
+  • Local Processing
+  • High Performance
+- Add expandable "Learn more" sections with detailed information
+
+5. Technical Foundation Section (New)
+Three-column layout highlighting:
+- HuggingFace Integration
+- Llama.cpp Performance
+- API Compatibility
+Include metrics and performance statistics
+
+6. Community & Social Proof Section (New)
+Add a grid showing:
+- GitHub activity & stars
+- Discord community size
+- Download statistics
+- User testimonials
+
+7. Call-to-Action Section (New)
+- Platform-specific download buttons
+- Quick links to documentation
+- Community channels
+
+Design Enhancements:
+1. Animations & Interactions
+- Smooth scroll transitions
+- Subtle hover effects on cards
+- Feature reveal animations
+- Progress indicators
+
+2. Visual Elements
+- Keep current clean aesthetic
+- Maintain violet accent color scheme
+- Use consistent spacing
+- Add subtle shadows on hover
+
+3. Responsive Design
+- Optimize split-screens for mobile
+- Maintain current clean typography
+- Ensure consistent spacing across devices
+
+Image Requirements:
+1. Screenshots
+- High resolution (2x)
+- Light theme matching current design
+- Actual app interface captures
+- Subtle rounded corners
+- Light drop shadows
+
+2. Icons
+- Keep current minimal style
+- Maintain violet accent colors
+- Add subtle hover animations

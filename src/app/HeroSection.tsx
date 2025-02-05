@@ -3,37 +3,52 @@
 import { motion } from "framer-motion";
 import { Download, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Container } from "@/components/ui/container";
+import Image from "next/image";
 import { fadeIn } from "./animations";
 
 export function HeroSection() {
   return (
-    <section className="px-4 py-12 sm:py-20">
-      <div className="max-w-4xl mx-auto">
-        <motion.div
-          {...fadeIn}
-          className="text-center space-y-6"
-        >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-            Run LLMs locally, powered by
-            <span className="text-violet-600"> Open Source</span>
+    <section className="py-12 sm:py-20">
+      <Container>
+        <motion.div {...fadeIn} className="text-center space-y-8">
+          <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
+            Run LLMs locally, powered by{" "}
+            <span className="bg-gradient-to-r from-violet-600 to-purple-400 bg-clip-text text-transparent animate-gradient">
+              Open Source
+            </span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            Experience the power of local AI with seamless integration, enhanced privacy, and enterprise-grade features.
+          <p className="text-xl text-muted-foreground mx-auto max-w-2xl">
+            Run LLMs locally, completely free, private and without technical hassle or setup.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" className="gap-2 w-full sm:w-auto">
-              <Download className="w-5 h-5" />
+            <Button size="lg" className="gap-2">
+              <Download className="h-5 w-5" />
               Download for macOS
             </Button>
-            <Button variant="outline" size="lg" className="gap-2 w-full sm:w-auto">
+            <Button variant="outline" size="lg" className="gap-2">
               View on GitHub
-              <ChevronRight className="w-4 h-4" />
+              <ChevronRight className="h-4 w-4" />
             </Button>
           </div>
 
-          <CodeExample />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="mx-auto mt-12 max-w-5xl overflow-hidden rounded-xl shadow-2xl"
+          >
+            <Image
+              src="/chat-ui.jpeg"
+              alt="Bodhi Chat Interface"
+              width={1200}
+              height={675}
+              className="w-full"
+              priority
+            />
+          </motion.div>
         </motion.div>
-      </div>
+      </Container>
     </section>
   );
 }
