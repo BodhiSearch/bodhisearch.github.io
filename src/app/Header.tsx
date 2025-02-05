@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Github, Disc as Discord, BookOpen } from "lucide-react";
+import { BookOpen, Disc as Discord, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -29,13 +29,17 @@ export function Header() {
               <span>Docs</span>
             </Link>
           </Button>
-          <Button variant="ghost" size="sm" className="gap-2">
-            <Github className="w-4 h-4" />
-            <span>GitHub</span>
+          <Button variant="ghost" size="sm" className="gap-2" asChild>
+            <Link href="https://github.com/BodhiSearch/BodhiApp" target="_blank" rel="noopener noreferrer">
+              <Github className="w-4 h-4" />
+              <span>GitHub</span>
+            </Link>
           </Button>
-          <Button variant="ghost" size="sm" className="gap-2">
-            <Discord className="w-4 h-4" />
-            <span>Discord</span>
+          <Button variant="ghost" size="sm" className="gap-2" asChild>
+            <Link href="https://discord.gg/3vur28nz82" target="_blank" rel="noopener noreferrer">
+              <Discord className="w-4 h-4" />
+              <span>Discord</span>
+            </Link>
           </Button>
         </div>
       </nav>
