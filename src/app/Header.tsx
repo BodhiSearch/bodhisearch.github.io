@@ -22,23 +22,23 @@ export function Header() {
         </Link>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
           <Button variant="ghost" size="sm" className="gap-2" asChild>
             <Link href="/docs">
               <BookOpen className="w-4 h-4" />
-              <span>Docs</span>
+              <span className="hidden sm:inline">Docs</span>
             </Link>
           </Button>
           <Button variant="ghost" size="sm" className="gap-2" asChild>
             <Link href="https://github.com/BodhiSearch/BodhiApp" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4" />
-              <span>GitHub</span>
+              <span className="hidden sm:inline">GitHub</span>
             </Link>
           </Button>
           <Button variant="ghost" size="sm" className="gap-2" asChild>
             <Link href="https://discord.gg/3vur28nz82" target="_blank" rel="noopener noreferrer">
               <Discord className="w-4 h-4" />
-              <span>Discord</span>
+              <span className="hidden sm:inline">Discord</span>
             </Link>
           </Button>
         </div>
