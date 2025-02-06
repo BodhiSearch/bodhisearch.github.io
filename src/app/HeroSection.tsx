@@ -14,6 +14,22 @@ export function HeroSection() {
     <section className="py-12 sm:py-20">
       <Container>
         <motion.div {...fadeIn} className="text-center space-y-8">
+          <div className="flex justify-center mb-8">
+            <a
+              href="https://www.producthunt.com/posts/bodhi-app-run-llms-locally?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bodhi-app-run-llms-locally"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=850615&theme=light&t=1738822645521"
+                alt="Bodhi App - Run LLMs Locally - Your Personal, Private, Powerful AI Assistant | Free & OSS"
+                width="250"
+                height="54"
+                style={{ width: '250px', height: '54px' }}
+              />
+            </a>
+          </div>
+
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
             Run LLMs locally, powered by{" "}
             <span className="bg-gradient-to-r from-violet-600 to-purple-400 bg-clip-text text-transparent animate-gradient">
