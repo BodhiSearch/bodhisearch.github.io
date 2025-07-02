@@ -1,9 +1,8 @@
 "use client";
 
-import { Download } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { DOWNLOAD_URL } from "@/lib/constants";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -17,14 +16,14 @@ export function DownloadSection() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold mb-6">Ready to get started?</h2>
+          <h2 className="text-3xl font-bold mb-6">Stay in the loop</h2>
           <p className="text-muted-foreground mb-8">
-            Download Bodhi App for macOS and start running LLMs locally today.
+            We are working on a new version of Bodhi App that will be available for download soon. Sign up to get notified.
           </p>
           <Button size="lg" className="gap-2" asChild>
-            <Link href={DOWNLOAD_URL}>
-              <Download className="h-5 w-5" />
-              Download for macOS (Apple Silicon)
+            <Link href="https://tally.so/r/mVyxQa" target="_blank" rel="noopener noreferrer">
+              <Mail className="h-5 w-5" />
+              Get notified
             </Link>
           </Button>
         </motion.div>
